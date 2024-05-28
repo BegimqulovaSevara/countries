@@ -17,7 +17,10 @@ html {
   *::after {
     box-sizing: inherit;
     }
-
+.dark-mode{
+  color: var(--header-light);
+  background-color: var(--dark-color);
+}
 body {
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@ img {
 
   /* HEADER SECTION */
 .header{
-  background-color: var(--header-light);
+  /* background-color: var(--header-light); */
 }
 .header-container{
   display: flex;
@@ -63,22 +66,24 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.site-button{
+.site-title{
+  width: 310px;
+  margin-right: 650px;
+}
+.dark-button{
+  background-color: unset;
+  color: var(--dark-color);
+  border: none;
   display: flex;
   align-items: center;
 }
-.dark-img{
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-.dark-button{
-  background-color: var(--header-light);
-  border: none;
+.dark-button::before{
+  content: url(../img/dark-icon.svg);
 }
 
 /* Search form */
 .search {
+  width: 480px;
   display: flex;
   align-items: center;
 }
