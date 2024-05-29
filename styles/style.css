@@ -58,7 +58,7 @@ img {
 
   /* HEADER SECTION */
 .header{
-  /* background-color: var(--header-light); */
+  background-color: var(--header-light);
 }
 .header-container{
   display: flex;
@@ -82,6 +82,10 @@ img {
 }
 
 /* Search form */
+.navigation-container{
+  display: flex;
+  justify-content: space-between;
+}
 .search {
   width: 480px;
   display: flex;
@@ -92,4 +96,29 @@ img {
 }
 .search-input {
   border: none;
+}
+
+/* Promo Section */
+.promo-countries-row {
+}
+.countries-list {
+  margin-top: 0;
+  margin-bottom: 75px;
+  display: flex;
+  list-style: none;
+}
+.countries-list-item {
+  width: 264px;
+  height: 336px;
+  margin-left: 0;
+  background-color: var(--header-light);
+}
+.countries-list-item:not(:last-child) {
+  margin-right: 75px;
+}
+.item-title {
+  margin-left: 24px;
+}
+.item-paragraph {
+  margin-left: 24px;
 }
