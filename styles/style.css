@@ -1,9 +1,7 @@
 :root{
-  --header-dark:#2B3844;
-  --header-light:#FFFFFF;
-  --dark-color:#202C36;
-  --dark-text:#111517;
-  --light-color:#F2F2F2;
+  --text-color:#111517;
+  --body-bg:#f2f2f2;
+  --element-bg:#FFFFFF;
 }
 /* GLOBAL */
 html {
@@ -17,9 +15,13 @@ html {
   *::after {
     box-sizing: inherit;
     }
+a{
+  text-decoration: none;
+}    
 .dark-mode{
-  color: var(--header-light);
-  background-color: var(--dark-color);
+  --element-bg:#2B3844;
+  --text-color:#FFFFFF;
+  --body-bg:#202C36;
 }
 body {
     display: flex;
@@ -30,8 +32,8 @@ body {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color:var(--light-color);
-    color: #222;
+    background-color:var(--body-bg);
+    color:var(--text-color);
     }
 
 img {
@@ -58,7 +60,7 @@ img {
 
   /* HEADER SECTION */
 .header{
-  background-color: var(--header-light);
+  background-color: var(--element-bg);
 }
 .header-container{
   display: flex;
@@ -69,10 +71,13 @@ img {
 .site-title{
   width: 310px;
   margin-right: 650px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
 }
 .dark-button{
   background-color: unset;
-  color: var(--dark-color);
+  color: var(--text-color);
   border: none;
   display: flex;
   align-items: center;
@@ -83,19 +88,48 @@ img {
 
 /* Search form */
 .navigation-container{
+  margin-top: 48px;
   display: flex;
   justify-content: space-between;
 }
 .search {
   width: 480px;
+  height: 56px;
   display: flex;
   align-items: center;
+  border: 0;
+  background-color: var(--element-bg);
 }
 .search-img {
   margin-right: 24px;
+  margin-left: 32px;
 }
 .search-input {
   border: none;
+  background-color: unset;
+}
+/* Navigation */
+.filter-region-list {
+  width: 200px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  margin-top: 0;
+  background-color: var(--element-bg);
+  list-style: none;
+  transform-origin: top left;
+}
+.filter-region-list:hover{
+  transform: scaleY(3);
+}
+.filter-list-item {
+}
+.filter-item-link {
+  color: var(--text-color);
 }
 
 /* Promo Section */
@@ -111,14 +145,26 @@ img {
   width: 264px;
   height: 336px;
   margin-left: 0;
-  background-color: var(--header-light);
+  background-color: var(--element-bg);
 }
 .countries-list-item:not(:last-child) {
   margin-right: 75px;
 }
+.flag-img{
+  border-radius: 5px 5px 0 0;
+}
 .item-title {
   margin-left: 24px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
 }
 .item-paragraph {
   margin-left: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+.list-item-span{
+  font-weight: 300;
 }
