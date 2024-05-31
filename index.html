@@ -31,7 +31,7 @@
                     <input class="search-input" type="text" placeholder="Search for a country…">
                 </form>
                 <nav class="navigation">
-                    <ul class="filter-region-list">
+                    <!-- <ul class="filter-region-list">
                         Filter by Region
                         <li class="filter-list-item">
                             <a href="" class="filter-item-link">Africa</a>
@@ -48,7 +48,18 @@
                         <li class="filter-list-item">
                             <a href="" class="filter-item-link">Oceania</a>
                         </li>
-                    </ul>
+                    </ul> -->
+                    <form class="navigation-form" action="">
+                        <select class="form-select" id="countries">
+                            <option class="option" label="Filter by Region" selected></option>
+                            <option class="option" value="africa">Africa</option>
+                            <option class="option" value="america">America</option>
+                            <option class="option" value="asia">Asia</option>
+                            <option class="option" value="europe">Europe</option>
+                            <option class="option option-last" value="oceania">Oceania</option>
+                        </select>
+                    </form>
+
                 </nav>
         </section>
         </div>

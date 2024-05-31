@@ -87,6 +87,9 @@ img {
 }
 
 /* Search form */
+.navigation-section{
+  margin-bottom: 48px;
+}
 .navigation-container{
   margin-top: 48px;
   display: flex;
@@ -109,29 +112,26 @@ img {
   background-color: unset;
 }
 /* Navigation */
-.filter-region-list {
-  width: 200px;
+.navigation-form {
+  background-color: var(--element-bg);
+  border: 0;
+}
+.form-select {
   height: 56px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 24px;
-  margin-top: 0;
+  padding-right: 77px;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  border:0;
   background-color: var(--element-bg);
-  list-style: none;
-  transform-origin: top left;
-}
-.filter-region-list:hover{
-  transform: scaleY(3);
-}
-.filter-list-item {
-}
-.filter-item-link {
   color: var(--text-color);
 }
-
+.option {
+  color: var(--text-color);
+}
 /* Promo Section */
 .promo-countries-row {
 }
