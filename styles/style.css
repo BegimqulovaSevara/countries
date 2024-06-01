@@ -34,6 +34,8 @@ body {
     line-height: 1.5;
     background-color:var(--body-bg);
     color:var(--text-color);
+    transition: background-color 0.4s ease, 
+    color 0.4 ease;
     }
 
 img {
@@ -75,15 +77,17 @@ img {
   font-size: 24px;
   line-height: 33px;
 }
+.dark-mode-moon{
+  display: block;
+  margin-bottom: 2px;
+  margin-right: 8px;
+}
 .dark-button{
   background-color: unset;
   color: var(--text-color);
   border: none;
   display: flex;
   align-items: center;
-}
-.dark-button::before{
-  content: url(../img/dark-icon.svg);
 }
 
 /* Search form */
@@ -95,21 +99,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.search {
-  width: 480px;
-  height: 56px;
+.form{
+  width: 1280px;
   display: flex;
-  align-items: center;
-  border: 0;
-  background-color: var(--element-bg);
+  justify-content: space-between;
 }
 .search-img {
   margin-right: 24px;
   margin-left: 32px;
 }
 .search-input {
+  width: 480px;
   border: none;
-  background-color: unset;
+  background-color: var(--element-bg);
 }
 /* Navigation */
 .navigation-form {

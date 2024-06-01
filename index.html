@@ -18,59 +18,38 @@
     <header class="header">
         <div class="header-container container">
             <h1 class="site-title">Where in the world?</h1>
-                <!-- <img class="dark-img" src="./img/dark-icon.svg" alt=""> -->
-                <button onclick="myFunction()" class="dark-button">Dark Mode</button>
+                <button class="dark-button">
+                    <svg class="dark-mode-moon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5532 13.815C9.66857 13.815 6.51929 10.9278 6.51929 7.36821C6.51929 6.0253 6.96679 4.78158 7.73143 3.75C4.69036 4.69515 2.5 7.33122 2.5 10.4381C2.5 14.3385 5.94929 17.5 10.2036 17.5C13.5929 17.5 16.4696 15.4932 17.5 12.7045C16.375 13.4048 15.0161 13.815 13.5532 13.815Z" fill="#fff" stroke="currentColor" stroke-width="1.25"/>
+                        </svg>
+                    Dark Mode
+                </button>
         </div>
     </header>
     <!-- MAIN CONTENT -->
     <main class="main-content">
         <section class="navigation-section">
             <div class="navigation-container container">
-                <form action="" class="search">
-                    <img src="./img/icon-search-black.svg" alt="" class="search-img">
-                    <input class="search-input" type="text" placeholder="Search for a country…">
+                <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+                    <input class="search-input" type="text" name="search" placeholder="Search for a country…" aria-label="Country name" required>
+                    <select class="form-select" name="regions" aria-label="Regions">
+                        <option class="option" label="Filter by Region" selected></option>
+                        <option class="option" value="africa">Africa</option>
+                        <option class="option" value="america">America</option>
+                        <option class="option" value="asia">Asia</option>
+                        <option class="option" value="europe">Europe</option>
+                        <option class="option option-last" value="oceania">Oceania</option>
+                    </select>
                 </form>
-                <nav class="navigation">
-                    <!-- <ul class="filter-region-list">
-                        Filter by Region
-                        <li class="filter-list-item">
-                            <a href="" class="filter-item-link">Africa</a>
-                        </li>
-                        <li class="filter-list-item">
-                            <a href="" class="filter-item-link">America</a>
-                        </li>
-                        <li class="filter-list-item">
-                            <a href="" class="filter-item-link">Asia</a>
-                        </li>
-                        <li class="filter-list-item">
-                            <a href="" class="filter-item-link">Europe</a>
-                        </li>
-                        <li class="filter-list-item">
-                            <a href="" class="filter-item-link">Oceania</a>
-                        </li>
-                    </ul> -->
-                    <form class="navigation-form" action="">
-                        <select class="form-select" id="countries">
-                            <option class="option" label="Filter by Region" selected></option>
-                            <option class="option" value="africa">Africa</option>
-                            <option class="option" value="america">America</option>
-                            <option class="option" value="asia">Asia</option>
-                            <option class="option" value="europe">Europe</option>
-                            <option class="option option-last" value="oceania">Oceania</option>
-                        </select>
-                    </form>
-
-                </nav>
+            </div>
         </section>
-        </div>
-
         <!-- Promo Section -->
         <section class="promo">
             <div class="container">
                 <div class="promo-countries-row">
                     <ul class="countries-list">
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-germany.png" alt="flag-germany">
+                            <img class="flag-img" src="./img/flag-germany.png" alt="flag-germany" width="264px" height="160px">
                             <h3 class="item-title">
                                 Germany
                             </h3>
@@ -85,48 +64,48 @@
                             </p>
                         </li>
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-usa.png" alt="flag-usa">
+                            <img class="flag-img" src="./img/flag-usa.png" alt="flag-usa" width="264px" height="160px">
                             <h3 class="item-title">
-                                Germany
+                                United States of America
                             </h3>
                             <p class="item-paragraph">
-                                Population: <span class="list-item-span">81,770,900</span>
+                                Population: <span class="list-item-span">323,947,000</span>
                             </p>
                             <p class="item-paragraph">
-                                Region: <span class="list-item-span">Europe</span>
+                                Region: <span class="list-item-span">Americas</span>
                             </p>
                             <p class="item-paragraph">
-                                Capital: <span class="list-item-span">Berlin</span>
+                                Capital: <span class="list-item-span">Washington, D.C.</span>
                             </p>
                         </li>
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-brazil.png" alt="flag-brazil">
+                            <img class="flag-img" src="./img/flag-brazil.png" alt="flag-brazil" width="264px" height="160px">
                             <h3 class="item-title">
-                                Germany
+                                Brazil
                             </h3>
                             <p class="item-paragraph">
-                                Population: <span class="list-item-span">81,770,900</span>
+                                Population: <span class="list-item-span">206,135,893</span>
                             </p>
                             <p class="item-paragraph">
-                                Region: <span class="list-item-span">Europe</span>
+                                Region: <span class="list-item-span">Americas</span>
                             </p>
                             <p class="item-paragraph">
-                                Capital: <span class="list-item-span">Berlin</span>
+                                Capital: <span class="list-item-span">Brasilia</span>
                             </p>
                         </li>
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-iseland.png" alt="flag-iseland">
+                            <img class="flag-img" src="./img/flag-iseland.png" alt="flag-iseland" width="264px" height="160px">
                             <h3 class="item-title">
-                                Germany
+                                Iceland
                             </h3>
                             <p class="item-paragraph">
-                                Population: <span class="list-item-span">81,770,900</span>
+                                Population: <span class="list-item-span">334,300</span>
                             </p>
                             <p class="item-paragraph">
                                 Region: <span class="list-item-span">Europe</span>
                             </p>
                             <p class="item-paragraph">
-                                Capital: <span class="list-item-span">Berlin</span>
+                                Capital: <span class="list-item-span">Reykjavík</span>
                             </p>
                         </li>
                     </ul>
@@ -134,63 +113,63 @@
                 <div class="promo-countries-row">
                     <ul class="countries-list">
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-afghanistan.png" alt="flag-afghanistan">
+                            <img class="flag-img" src="./img/flag-afghanistan.png" alt="flag-afghanistan" width="264px" height="160px">
                             <h3 class="item-title">
-                                Germany
+                                Afghanistan
                             </h3>
                             <p class="item-paragraph">
-                                Population: <span class="list-item-span">81,770,900</span>
+                                Population: <span class="list-item-span">27,657,145</span>
                             </p>
                             <p class="item-paragraph">
-                                Region: <span class="list-item-span">Europe</span>
+                                Region: <span class="list-item-span">Asia</span>
                             </p>
                             <p class="item-paragraph">
-                                Capital: <span class="list-item-span">Berlin</span>
+                                Capital: <span class="list-item-span"> Kabul</span>
                             </p>
                         </li>
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-aiseland.png" alt="flag-aland-iseland">
+                            <img class="flag-img" src="./img/flag-aiseland.png" alt="flag-aland-iseland" width="264px" height="160px">
                             <h3 class="item-title">
-                                Germany
+                                Åland Islands
                             </h3>
                             <p class="item-paragraph">
-                                Population: <span class="list-item-span">81,770,900</span>
+                                Population: <span class="list-item-span">28,875</span>
                             </p>
                             <p class="item-paragraph">
                                 Region: <span class="list-item-span">Europe</span>
                             </p>
                             <p class="item-paragraph">
-                                Capital: <span class="list-item-span">Berlin</span>
+                                Capital: <span class="list-item-span">Mariehamn</span>
                             </p>
                         </li>
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-albania.png" alt="flag-albania">
+                            <img class="flag-img" src="./img/flag-albania.png" alt="flag-albania" width="264px" height="160px">
                             <h3 class="item-title">
-                                Germany
+                                Albania
                             </h3>
                             <p class="item-paragraph">
-                                Population: <span class="list-item-span">81,770,900</span>
+                                Population: <span class="list-item-span">2,886,026</span>
                             </p>
                             <p class="item-paragraph">
                                 Region: <span class="list-item-span">Europe</span>
                             </p>
                             <p class="item-paragraph">
-                                Capital: <span class="list-item-span">Berlin</span>
+                                Capital: <span class="list-item-span">Tirane</span>
                             </p>
                         </li>
                         <li class="countries-list-item">
-                            <img class="flag-img" src="./img/flag-algeria.png" alt="flag-algeria">
+                            <img class="flag-img" src="./img/flag-algeria.png" alt="flag-algeria" width="264px" height="160px">
                             <h3 class="item-title">
-                                Germany
+                                Algeria
                             </h3>
                             <p class="item-paragraph">
-                                Population: <span class="list-item-span">81,770,900</span>
+                                Population: <span class="list-item-span">40,400,000</span>
                             </p>
                             <p class="item-paragraph">
-                                Region: <span class="list-item-span">Europe</span>
+                                Region: <span class="list-item-span">Africa</span>
                             </p>
                             <p class="item-paragraph">
-                                Capital: <span class="list-item-span">Berlin</span>
+                                Capital: <span class="list-item-span"> Algiers</span>
                             </p>
                         </li>
                     </ul>
