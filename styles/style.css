@@ -111,6 +111,7 @@ img {
 .search-input {
   width: 480px;
   border: none;
+  display: block;
   background-color: var(--element-bg);
 }
 /* Navigation */
