@@ -2,9 +2,7 @@ const elDarkModeButton = document.querySelector('.dark-button');
 
 if(localStorage.getItem('darkmode') === document.body.classList.toggle('dark-mode')){
   document.body.classList = 'dark-mode'
-}else{
 }
-
 
 if(elDarkModeButton){
   elDarkModeButton.addEventListener( 'click', function(evt) {
